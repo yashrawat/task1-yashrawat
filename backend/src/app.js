@@ -3,6 +3,9 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+const busboy = require('connect-busboy');
+const busboyBodyParser = require('busboy-body-parser');
+
 const campaignRoutes = require('./routes/campaign-route');
 
 const app = express();
@@ -23,6 +26,9 @@ app.use(bodyParser.json());
 
 // parse application/x-www-form-encoded
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(busboy());
+app.use(busboyBodyParser());
 
 // cors
 app.use(cors());

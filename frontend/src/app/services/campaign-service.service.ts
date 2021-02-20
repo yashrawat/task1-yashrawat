@@ -33,4 +33,15 @@ export class CampaignServiceService {
         this.campaignDataUpdated.next({ campaignData: [...this.campaignData] });
       });
   }
+
+  // upload file
+  uploadFile(file): any {
+    console.log(file);
+    const formData = new FormData();
+    formData.append('fileKey', file, file.name);
+    this.http.post(`${BACKEND_URL}/uploadFileToS3Bucket`, formData)
+      .subscribe(() => {
+        console.log('File uploaded successfully');
+      });
+  }
 }

@@ -30,11 +30,14 @@
   <hr>
 
   <!-- upload button -->
-  <a class="upload-button">
-    <span class="material-icons">
-      cloud_upload
-    </span>
-  </a>
+  <div>
+    <a type="button" class="upload-button" (click)="filePicker.click()">
+      <span class="material-icons">
+        backup
+      </span>
+    </a>
+    <input type="file" #filePicker (change)="uploadFileToS3($event.target.files)">
+  </div>
 
   <!-- table -->
   <div class="table-div">

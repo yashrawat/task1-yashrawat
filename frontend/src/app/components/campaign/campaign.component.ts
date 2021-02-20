@@ -11,8 +11,14 @@ export class CampaignComponent implements OnInit, OnDestroy {
 
   campaignData;
   campaignDataSubs: Subscription;
+  fileToUpload: File = null;
 
   constructor(public campaignService: CampaignServiceService) { }
+
+  uploadFileToS3(files: FileList): any {
+    this.fileToUpload = files.item(0);
+    this.campaignService.uploadFile(this.fileToUpload);
+  }
 
   ngOnInit(): void {
     this.campaignData = this.campaignService.getAllCampaignData();

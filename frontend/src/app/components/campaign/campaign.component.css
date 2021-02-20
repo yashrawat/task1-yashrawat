@@ -89,3 +89,7 @@ tr:nth-child(even) {
 .align-applications-column {
   text-align: right;
 }
+
+input {
+  display: none;
+}
