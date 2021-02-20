@@ -1,0 +1,11 @@
+app-sidebar {
+  height: 100%;
+  width: 15rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightgrey;
+  overflow-x: hidden;
+  padding-top: 1.2rem;
+}

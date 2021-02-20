@@ -1,0 +1,67 @@
+<div class="container">
+
+  <div class="div-inline-top">
+
+    <h1 class="container-heading">Campaign Dashboard</h1>
+
+    <div class="div-buttons">
+
+      <!-- post campaign button -->
+      <button type="button" class="post-campaign-button">Post Campaign</button>
+
+      <!-- comment button -->
+      <a type="button" class="comment-button">
+        <span class="material-icons">
+          textsms
+        </span>
+      </a>
+
+      <!-- notification button -->
+      <a type="button" class="notification-button">
+        <span class="material-icons">
+          notifications
+        </span>
+      </a>
+
+    </div>
+
+  </div>
+
+  <hr>
+
+  <!-- upload button -->
+  <a class="upload-button">
+    <span class="material-icons">
+      cloud_upload
+    </span>
+  </a>
+
+  <!-- table -->
+  <div class="table-div">
+
+    <table>
+
+      <tr>
+        <th class="align-campaigns-column">Campaigns</th>
+        <th>Status</th>
+        <th class="align-applications-column">Applications</th>
+      </tr>
+
+      <tr *ngFor="let campaign of campaignData">
+        <td class="align-campaigns-column">{{ campaign.campaigns }}</td>
+        <td>{{ campaign.status }}</td>
+        <td class="align-applications-column">{{ campaign.applications }}</td>
+        <td>
+          <a type="button" class="dropdown-button">
+            <span class="material-icons">
+              more_vert
+            </span>
+          </a>
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</div>

@@ -1,0 +1,91 @@
+.container {
+  padding: 3rem;
+  padding-top: 1rem;
+  margin-left: 15rem;
+}
+
+.div-inline-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-heading {
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+.div-buttons {
+  margin: 3rem;
+}
+
+.post-campaign-button {
+  border-radius: 0.4rem;
+  background-color: rgb(124, 9, 231);
+  color: white;
+  margin-right: 2rem;
+  font-size: 1.3rem;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.comment-button {
+  margin-right: 2rem;
+  color: rgb(124, 9, 231);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.notification-button {
+  margin-right: 2rem;
+  color: rgb(124, 9, 231);
+  cursor: pointer;
+}
+
+/* horizontal line */
+
+.upload-button {
+  color: rgb(124, 9, 231);
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  bottom: 4rem;
+  right: 4rem;
+}
+
+.dropdown-button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-div {
+  margin: 5rem 8rem 5rem 8rem;
+}
+
+th {
+  font-size: 2rem;
+}
+
+td {
+  font-size: 1.2rem;
+}
+
+th, td {
+  text-align: center;
+  padding: 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.align-campaigns-column {
+  text-align: left;
+}
+
+.align-applications-column {
+  text-align: right;
+}
